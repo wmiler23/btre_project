@@ -1,0 +1,48 @@
+MODEL/DB FIELDS
+
+## LISTING
+ID: int
+realtor INT (FK from realtor table)
+title: string
+address: string
+city: string
+state: string
+zipcode: string
+description: text
+price: int
+bedrooms: int
+bathrooms: int
+garages: int  [0]
+list_date: date
+square_ft: int
+lot_size: float
+is_published: boolean [true]
+photo_main: string
+photo_1: string
+photo_2: string
+photo_3: string
+photo_4: string
+photo_5: string
+photo_6: string
+
+## REALTOR
+id: int
+name: string
+photo: string
+description: text
+email: string
+phone: string
+is_mvp: boolean [0]
+hire_date: date
+
+
+## CONTACT
+id: int
+user_id: int
+listing: int
+listing_id: int
+name: string
+email: string
+phone: string
+message: text
+contact_date: date
